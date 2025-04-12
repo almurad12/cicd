@@ -1,0 +1,13 @@
+name: Cron workflow
+on:
+  schedule:
+    - cron: '*/5 * * * *' 
+jobs:
+  cron-workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cron Workflow
+        run: |
+          echo "Hello Cron Job!
+          echo "This is automatic trigger 5 minute later"
