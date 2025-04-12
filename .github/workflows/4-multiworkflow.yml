@@ -1,0 +1,20 @@
+name: Multi work flow
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  first-work-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first work flow
+        run: |
+          echo "This is first work flow"
+  second-work-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second work flow
+        run: |
+          echo "This is second work flow"
+
