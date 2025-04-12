@@ -1,6 +1,6 @@
 name: First Workflow
 
-on:
+on:     ##it will start automatically
   push:
     branches:
       - main

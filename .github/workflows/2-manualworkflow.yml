@@ -1,0 +1,19 @@
+# 1.name 2.on 3.jobs
+
+name : manual workflow
+on:
+    workflow_dispatch: ##when you want start click the actions button
+jobs:
+    manual-workflow:
+        runs-on: ubuntu-latest
+        steps:
+           - name: Manual workflow
+             run: |
+                echo "hello manual workflow"
+                echo "this is manual workflow"
+        # steps:
+        #     - name: First manual step
+        #       run: |
+        #         echo "Hello, World!"
+        #         echo "Hello Again!"
+
