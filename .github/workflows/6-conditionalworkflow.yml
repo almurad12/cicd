@@ -3,7 +3,7 @@ name: conditional workflow
 on:
     push:
         paths:
-            - "backend/**"
+            - "backend/**" #trigger work if any change happend in backend
 jobs:
     conditiona-workflow:
         runs-on: ubuntu-latest
